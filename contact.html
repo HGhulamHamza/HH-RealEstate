@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HH RealEstate - Contact Us</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 100px;
+    }
+
+    .contact-image {
+      flex: 1 1 45%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-image img {
+      max-width: 100%;
+      height: 520px;
+      border-radius: 5px;
+      margin-right: 100px;
+    }
+
+    .contact-form {
+      flex: 1 1 45%;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: rgba(17, 16, 16, 0.815);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> HH RealEstate
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+         
+          <li>
+            <a href="./Preoperty.html" class="navbar-link" data-nav-link>Property</a>
+          </li>
+
+            
+          <li>
+            <a href="./features.html" class="navbar-link" data-nav-link>Add Feature</a>
+          </li>
+          
+          <li>
+            <a href="./investment.html" class="navbar-link" data-nav-link>Investment</a>
+          </li>
+          <li>
+            <a href="./agent.html" class="navbar-link" data-nav-link>Agents</a>
+          </li>
+          <li>
+            <a href="./contact.html"  class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li>
+            <a href="mailto:khawajahamza566@gmail.com" class="button2" data-nav-link>Email us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <div class="container contact-container">
+    <div class="contact-image">
+      <img src="./images/header.jpg" alt="Contact Us">
+    </div>
+    <div class="contact-form">
+      <h2>Contact us</h2>
+      <h3>Give us your Information to contact us</h3><br>
+      <form action="contact.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" name="save">Submit</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- 
+        - #CONTACT
+      -->
+<div id ="cn">
+  <section class="section contact" aria-label="contact">
+    <div class="container">
+
+      <h2 class="h2 section-title">Have Question? Get in touch!</h2>
+
+      <p class="section-text">
+          Call our agent and get your issue resolved quickly!
+      </p>
+      
+      <a href="tel:0332-3959507" class="btn btn-primary">
+          <ion-icon name="call-outline"></ion-icon>
+          <span class="span">Contact us</span>
+      </a>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+</div>
+<!-- 
+- #FOOTER
+-->
+
+<footer class="footer">
+
+<div class="footer-top">
+  <div class="container">
+
+    <div class="footer-brand">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> HH RealEstate
+      </a>
+
+      <p class="footer-text">
+        Guiding Your Investment Journey, Every Step of the Way.
+      </p>
+
+    </div>
+
+    <ul class="footer-list">
+
+      <li>
+        <p class="footer-list-title">Company</p>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">About us</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Services</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Pricing</span>
+        </a>
+      </li>
+
+      
+
+
+
+    </ul>
+
+    <ul class="footer-list">
+
+      <li>
+        <p class="footer-list-title">Useful Links</p>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Terms of Services</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Privacy Policy</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Listing</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="footer-link">
+          <ion-icon name="chevron-forward"></ion-icon>
+
+          <span class="span">Contact</span>
+        </a>
+      </li>
+
+    </ul>
+
+    <ul class="footer-list">
+
+      <li>
+        <p class="footer-list-title">Contact Details</p>
+      </li>
+
+      <li class="footer-item">
+        <ion-icon name="location-outline"></ion-icon>
+
+        <address class="address">
+          Peshawar,<br>
+          Pakistan<br>
+          
+          <a href="https://maps.app.goo.gl/TwTD5VAqXoYjgduw7" class="address-link">View on Google map</a>
+        </address>
+      </li>
+
+      <li class="footer-item">
+        <ion-icon name="mail-outline"></ion-icon>
+
+        <a href="mailto:contact@example.com" class="footer-link">khawajahamza566@gmail.com</a>
+      </li>
+
+      <li class="footer-item">
+        <ion-icon name="call-outline"></ion-icon>
+
+        <a href="tel:+152534468854" class="footer-link">0332-3959507</a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+<div class="footer-bottom">
+  <div class="container">
+
+    <p class="copyright">
+      &copy; 2024 HH RealEstate. All Right Reserved by <a href="#" class="copyright-link">codebyHamza</a>.
+    </p>
+
+    <ul class="social-list">
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="social-link">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</div>
+
+</footer>
+
+
+
+
+
+
+
+  <!-- Ionicons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

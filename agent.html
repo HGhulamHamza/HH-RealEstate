@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HH RealEstate - Our Agents</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    #agents-section {
+      margin-top: 120px;
+    }
+
+    .agent-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .agent-card {
+      flex: 1 1 calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 30px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .agent-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .agent-info {
+      display: none;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .agent-info label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    .agent-info input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-button {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: rgba(17, 16, 16, 0.815);
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <ion-icon name="business-outline"></ion-icon> HH RealEstate
+      </a>
+
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+         
+          <li>
+            <a href="./Preoperty.html" class="navbar-link" data-nav-link>Property</a>
+          </li>
+          <li>
+            <a href="./features.html" class="navbar-link" data-nav-link>Add Features</a>
+          </li>
+
+          <li>
+            <a href="./investment.html" class="navbar-link" data-nav-link>Investment</a>
+          </li>
+          <li>
+            <a href="./agent.html" class="navbar-link" data-nav-link>Our Agents</a>
+          </li>
+          <li>
+            <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li>
+            <a href="mailto:khawajahamza566@gmail.com" class="button2" data-nav-link>Email us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-hidden="true" class="close-icon"></ion.icon>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- AGENTS SECTION -->
+  <div id="agents-section" class="container">
+    <h2 class="h2 section-title" align="center">Our Agents</h2>
+    <p class="section-text">Meet our experienced real estate agents ready to help you find your dream &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;property!</p>
+      
+    <div class="agent-list">
+      <div class="agent-card" id="1">
+        <img src="images/profile_male.jpg" alt="Ali Hassan">
+        <h3>Ali Hassan</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(1)">Agent Information</button><br>
+        <div class="agent-info" id="agent-info-1">
+          <form action="agent.php" method="post">
+          <label for="tel-1">Tel No:</label>
+          <input type="text" id="tel-1" name="tel" value="+923001234567" readonly>
+          
+          <label for="email-1">Email:</label>
+          <input type="text" id="email-1" name="email" value="ali.hassan@example.com" readonly>
+          
+          <label for="experience-1">Experience:</label>
+          <input type="text" id="experience-1" name="experience" value="3 years" readonly>
+          
+          <label for="commission-1">Commission:</label>
+          <input type="text" id="commission-1" name="commission" value="5%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button><br>
+      </form>
+      <a href="tel:+923001234567">
+        <button class="button2">Contact Agent</button>
+    </a>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/profile_female.jpg" alt="Fatima Patel">
+        <h3>Fatima Patel</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(2)">Agent Information</button><br>
+        <div class="agent-info" id="agent-info-2">
+          <form action="agent.php" method="post">
+          <label for="tel-2">Tel No:</label>
+          <input type="text" id="tel" name="tel" value="+923456789012" readonly>
+          
+          <label for="email-2">Email:</label>
+          <input type="text" id="email" name="email" value="fatima.patel@example.com" readonly>
+          
+          <label for="experience-2">Experience:</label>
+          <input type="text" id="experience" name="experience" value="5 years" readonly>
+          
+          <label for="commission-2">Commission:</label>
+          <input type="text" id="commission" name="commission" value="4%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button></form><br>
+        <a href="tel:+923456789012">
+          <button class="button2">Contact Agent</button>
+      </a>
+      </div>
+    
+
+      <div class="agent-card">
+        <img src="images/profile_male.jpg" alt="Omar Khan">
+        <h3>Omar Khan</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(3)">Agent Information</button>
+        <div class="agent-info" id="agent-info-3">
+          <form action="agent.php" method="post">
+          <label for="tel-3">Tel No:</label>
+          <input type="text" id="tel-3" name="tel" value="+971234567890" readonly>
+          
+          <label for="email-3">Email:</label>
+          <input type="text" id="email-3" name="email" value="omar.khan@example.com" readonly>
+          
+          <label for="experience-3">Experience:</label>
+          <input type="text" id="experience-3" name="experience" value="2 years" readonly>
+          
+          <label for="commission-3">Commission:</label>
+          <input type="text" id="commission-3" name="commission" value="6%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button><br>
+      </form>
+      <a href="tel:+971234567890">
+        <button class="button2">Contact Agent</button>
+    </a>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/profile_male.jpg" alt="Raj Patel">
+        <h3>Raj Patel</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(4)">Agent Information</button>
+        <div class="agent-info" id="agent-info-4">
+          <form action="agent.php" method="post">
+          <label for="tel-4">Tel No:</label>
+          <input type="text" id="tel-4" name="tel" value="+922134567890" readonly>
+          
+          <label for="email-4">Email:</label>
+          <input type="text" id="email-4" name="email" value="raj.patel@example.com" readonly>
+          
+          <label for="experience-4">Experience:</label>
+          <input type="text" id="experience-4" name="experience" value="4 years" readonly>
+          
+          <label for="commission-4">Commission:</label>
+          <input type="text" id="commission-4" name="commission" value="4.5%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button><br>
+      </form>
+      <a href="tel:+922134567890">
+        <button class="button2">Contact Agent</button>
+    </a>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/profile_female.jpg" alt="Sara Ahmed">
+        <h3>Sara Ahmed</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(5)">Agent Information</button>
+        <div class="agent-info" id="agent-info-5">
+          <form action="agent.php" method="post">
+          <label for="tel-5">Tel No:</label>
+          <input type="text" id="tel-5" name="tel" value="+922345678901" readonly>
+          
+          <label for="email-5">Email:</label>
+          <input type="text" id="email-5" name="email" value="sara.ahmed@example.com" readonly>
+          
+          <label for="experience-5">Experience:</label>
+          <input type="text" id="experience-5" name="experience" value="6 years" readonly>
+          
+          <label for="commission-5">Commission:</label>
+          <input type="text" id="commission-5" name="commission" value="3.5%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button><br>
+      </form>
+      <a href="tel:+922345678901">
+        <button class="button2">Contact Agent</button>
+    </a>
+      </div>
+
+      <div class="agent-card">
+        <img src="images/profile_male.jpg" alt="Munir Ahmed">
+        <h3>Munir Ahmed</h3><br>
+        <button class="button2" onclick="toggleAgentInfo(6)">Agent Information</button>
+        <div class="agent-info" id="agent-info-6">
+          <form action="agent.php" method="post">
+          <label for="tel-6">Tel No:</label>
+          <input type="text" id="tel-6" name="tel" value="+922344458901" readonly>
+          
+          <label for="email-6">Email:</label>
+          <input type="text" id="email-6" name="email" value="munir.ahmed@example.com" readonly>
+          
+          <label for="experience-6">Experience:</label>
+          <input type="text" id="experience-6" name="experience" value="10 years" readonly>
+          
+          <label for="commission-6">Commission:</label>
+          <input type="text" id="commission-6" name="commission" value="5.5%" readonly>
+        </div>
+        <button class="contact-button" name="save">Submit</button><br>
+      </form>
+      <a href="tel:+922344458901">
+        <button class="button2">Contact Agent</button>
+    </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAgentInfo(agentId) {
+      var agentInfo = document.getElementById('agent-info-' + agentId);
+      if (agentInfo.style.display === "none" || agentInfo.style.display === "") {
+        agentInfo.style.display = "block";
+      } else {
+        agentInfo.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
